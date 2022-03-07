@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiGis - Repostería con amor</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Secular+One&display=swap" rel="stylesheet">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="/assets/gigis_logo.png" alt="logo repostería gigis" width="164px">
+                <h1 class="nav-titulo_logo">GiGis<br>Repostería con amor</h1>
+            </div>
+            <div class="nav-list">
+                <a href="#inicio" class="nav-enlace">INICIO</a>
+                <a href="#nuestros_pasteles" class="nav-enlace">NUESTROS PASTELES</a>
+                <a href="#decoraciones" class="nav-enlace">DECORACIONES</a>
+                <a href="#hacer_pedido" class="nav-enlace">HAZ TU PEDIDO</a>
+                <a href="/views/admin.html" class="nav-enlace">ADMIN</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <div class="carrusel">
+                <img class="carrusel-img_pastel" src="/assets/pastel_inicio.jpg" alt="pastel rosa">
+            </div>
+        </section>
+
+        <section id="nuestros_pasteles">
+            <h2 class="titulo_menu">Nuestros pasteles</h2> <br>
+
+            <div class="container">
+                <div class="card">
+                    <img src="/assets/pasteles/pastel_vainilla.jpg" alt="pastel de vainilla">
+                    <h4>Pastel de vainilla</h4>
+                    <p>Precio: $250</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/pasteles/pastel_chocolate.jpg" alt="pastel de chocolate">
+                    <h4>Pastel de chocolate</h4>
+                    <p>Precio: $200</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/pasteles/pastel_nuez.jpg" alt="pastel de nuez">
+                    <h4>Pastel de nuez</h4>
+                    <p>Precio: $280</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/pasteles/pastel_coco.jpg" alt="pastel de coco">
+                    <h4>Pastel de coco</h4>
+                    <p>Precio: $300</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/pasteles/pastel_zanahoria.jpg" alt="pastel de zanahoria">
+                    <h4>Pastel de zanahoria</h4>
+                    <p>Precio: $220</p>
+                </div>
+            </div>
+            <h2 class="titulo_menu" style="margin-top:530px;">Contamos con dos diferentes tipos de pasteles:</h2> 
+            <div class="container" style="margin-top:0px;">
+                <div class="card">
+                    <img src="/assets/tipos_pastel/pastel_seco.jpeg" alt="pastel tipo seco">
+                    <h4>Pastel tipo seco</h4>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="/assets/tipos_pastel/pastel_tres_leches.jpg" alt="pastel de tres leches">
+                    <h4>Pastel de tres leches</h4>
+                    <p></p>
+                </div>
+                </div>
+            </div>
+        </section>
+            
+        <section id="decoraciones">
+            <h2 class="titulo_menu">Decoraciones</h2> <br>
+
+            <div class="container">
+                <div class="card">
+                    <img src="/assets/decoraciones/letreros.jpg" alt="letreros para pastel">
+                    <h4>Letreros</h4>
+                    <p>Precio: $10</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/decoraciones/velas_chisperas.jpeg" alt="velas chisperas">
+                    <h4>Velas chisperas</h4>
+                    <p>Precio: $60</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/decoraciones/fondant.jpg" alt="fondant para pastel">
+                    <h4>Fondant</h4>
+                    <p>Precio: Varía, dependiendo el pastel</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hacer_pedido">
+            <h2 class="titulo_menu">Haz tu pedido</h2>
+
+            <form action="">
+                <h3 class="titulo-form_pedido">
+                    Por favor, proporciónanos tus datos para ponernos en contacto contigo
+                </h3>
+                <div class="datos_cliente">
+                    <div class="campo_form_cliente">
+                        <label for="nombre">Nombre(s)</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="campo_form_cliente">
+                        <label for="ap_paterno">Apellido paterno</label>
+                        <input type="text" id="ap_paterno">
+                    </div>
+                    <div class="campo_form_cliente">
+                        <label for="ap_materno">Apellido materno</label>
+                        <input type="text" id="apellido_materno">
+                    </div>
+                    <div class="campo_form_cliente">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="campo_form_cliente">
+                        <label for="telefono">Teléfono de contacto</label>
+                        <input type="tel" id="telefono">
+                    </div>
+                </div>
+                <h3 class="titulo-form_pedido">
+                    Elige cualquiera de las opciones que tenemos disponibles para ti
+                </h3>
+                <div class="datos_pedido">
+                    <div>
+                        <label><input type="radio" id="radio1_pedido" value="pastel_vainilla"> Pastel de vainilla</label><br>
+                        <label><input type="radio" id="radio2_pedido" value="pastel_chocolate"> Pastel de chocolate</label><br>
+                    </div>
+                    <div>
+                        <label><input type="radio" id="radio3_pedido" value="pastel_nuez"> Pastel de nuez</label><br>
+                        <label><input type="radio" id="radio4_pedido" value="pastel_coco"> Pastel de coco</label><br>
+                    </div>
+                    <div>
+                        <label><input type="radio" id="radio5_pedido" value="pastel_zanahoria"> Pastel de zanahoria</label><br>
+                    </div>
+                    <textarea placeholder="Comentarios adicionales"></textarea><br>
+                </div>
+                <h3 class="titulo-form_pedido">
+                    O si lo prefieres, puedes armar tu propio pastel
+                </h3>
+                <div class="datos_pedido_personalizado">
+                    <div>
+                        <p>Elige el sabor</p>
+                        <label><input type="radio" id="radio1_sabor" value="sabor_vainilla"> Vainilla</label><br>
+                        <label><input type="radio" id="radio2_sabor" value="sabor_chocolate"> Chocolate</label><br>
+                        <label><input type="radio" id="radio3_sabor" value="sabor_nuez"> Nuez</label><br>
+                        <label><input type="radio" id="radio4_sabor" value="sabor_coco"> Coco</label><br>
+                        <label><input type="radio" id="radio5_sabor" value="sabor_zanahoria"> Zanahoria</label><br>
+                    </div>
+                    <div>
+                        <p>Elige el tipo de pastel</p>
+                        <label><input type="radio" id="radio1_tipo" value="tipo_seco"> Seco</label><br>
+                        <label><input type="radio" id="radio2_tipo" value="tipo_tres_leches"> Tres leches</label><br>
+                    </div>
+                    <div>
+                        <p>Elige la(s) decoraciones</p>
+                        <label><input type="checkbox" id="cb1_decoracion" value="decoracion_letrero"> Letrero</label><br>
+                        <label><input type="checkbox" id="cb2_decoracion" value="decoracion_vela"> Vela chispera</label><br>
+                        <label><input type="checkbox" id="cb3_decoracion" value="decoracion_fondant"> Fondant</label><br>
+                    </div>
+                </div>
+                <textarea placeholder="Comentarios adicionales" class="ta_pedido_personalizado"></textarea><br>
+                <button class="btn-enviar" name="button">Realizar pedido</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div>
+                <h1>Contactanos</h1>
+                <div class="footer-links">
+                    <div>
+                        <p><span><i class="fa-solid fa-location-dot"></i></span>    Av. Morelos Sur 431, Centro histórico de Morelia, 58000 Morelia, Mich.</p>
+                    </div>
+                    <div>
+                        <p><span><i class="fa-solid fa-phone"></i></span>   (55) 5555 55 55</p>
+                    </div>
+                    <div>
+                        <a href="#"><span><i class="fa-brands fa-facebook"></i></span>   GiGis: Repostería con amor</a>
+                    </div>
+                    <div>
+                        <a href="#"><span><i class="fa-brands fa-instagram"></i></span>  gigis_reposteria</a>
+                    </div>
+                    <div>
+                        <a href="mailto:gigis_reposteria@mail.com"><span><i class="fa-solid fa-at"></i></span>  gigis_reposteria@mail.com</a>
+                    </div>
+                </div>
+                <div class="copy_footer">
+                    <p>© <a href="#">GiGis Repostería con amor</a>. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/c7f614afc4.js" crossorigin="anonymous"></script>
+</body>
+</html>
